@@ -27,7 +27,6 @@ Realizar una calculadora
 - 3- Multiplicación (*)
 - 4- División (/)
 - 5- SALIR
-
 Se debe efectuar el cálculo correcto según la
 operación ingresada por consola
 
@@ -64,3 +63,47 @@ Alumno:
 
 print("Mi Calculadora (^_^)")
 # Empezar aquí la resolución del ejercicio
+
+
+while True:
+  print(f'Opciones de operacion:\n1 = Suma\n2 = Resta\n3 = División\n4 = Multiplicación\n5 = Salir')
+  operacion = str(input('Ingrese la operacion que desea realizar: '))
+  
+  if operacion in ('1','2','3','4'):
+    numero_1 = float(input('Ingrese el primer número: '))
+    numero_2 = float(input('Ingrese el segundo número: '))
+
+    if operacion == '1':
+      resultado = numero_1 + numero_2
+    elif operacion == '2':
+      resultado = numero_1 - numero_2
+    elif operacion =='3':
+      if numero_2 == 0:
+         resultado = print('No se puede dividir por cero') 
+      else:
+        resultado = numero_1 / numero_2
+    elif operacion == '4':
+      resultado = numero_1 * numero_2  
+     
+    print(f'El resultado es: {resultado}\n------------------')  
+
+  elif operacion == '5':
+    break
+
+     
+     
+
+
+
+
+
+      
+
+
+
+
+
+
+  
+  
+
