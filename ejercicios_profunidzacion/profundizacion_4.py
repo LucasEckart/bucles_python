@@ -79,9 +79,9 @@ while True:
       resultado = numero_1 - numero_2
     elif operacion =='3':
       if numero_2 == 0:
-         resultado = print('No se puede dividir por cero') 
+          resultado = print('No se puede dividir por cero') 
       else:
-        resultado = numero_1 / numero_2
+          resultado = numero_1 / numero_2
     elif operacion == '4':
       resultado = numero_1 * numero_2  
      
@@ -89,6 +89,8 @@ while True:
 
   elif operacion == '5':
     break
+  else:
+    print(f'Opción incorrecta\n------------------')
 
      
      
